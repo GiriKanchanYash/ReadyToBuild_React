@@ -1,0 +1,16 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+gunicorn>=21.2.0
+snowflake-connector-python>=3.6.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# --- Fabric backend (backend/fabric_app) ---
+azure-identity>=1.17.0
+pyodbc>=5.1.0
+pandas>=2.2.0
+openai>=1.30.0
+pyyaml>=6.0.1
+# fabric_app/db.py uses azure-identity InteractiveBrowserCredential to obtain
+# a Microsoft Entra access token, which is injected into ODBC Driver 18.

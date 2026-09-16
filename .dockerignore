@@ -1,0 +1,23 @@
+# Dependencies / build output (rebuilt inside the image)
+**/node_modules
+frontend/dist
+backend/static
+backend/.python_packages
+backend/__pycache__
+**/__pycache__
+**/*.pyc
+ 
+# Secrets -- never bake these into an image
+.env
+.env.*
+!backend/.env.example
+ 
+# VCS / OS / editor junk
+.git
+.gitignore
+.DS_Store
+.vscode
+.idea
+ 
+# Local zips from the non-Docker deploy path
+*.zip
