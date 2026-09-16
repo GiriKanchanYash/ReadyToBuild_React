@@ -12,5 +12,7 @@ pyodbc>=5.1.0
 pandas>=2.2.0
 openai>=1.30.0
 pyyaml>=6.0.1
-# fabric_app/db.py uses azure-identity InteractiveBrowserCredential to obtain
-# a Microsoft Entra access token, which is injected into ODBC Driver 18.
+
+# fabric_app/db.py uses azure-identity InteractiveBrowserCredential
+# to obtain a Microsoft Entra access token, which is injected into
+# ODBC Driver 18.
